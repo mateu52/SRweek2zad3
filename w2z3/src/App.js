@@ -1,6 +1,6 @@
 import './App.css';
-import React  from "react"; 
-//cd SRweek2zad3\w2z3
+import React, {useState, useEffect} from "react";
+
 
 class TimexClass extends React.Component {
   constructor(props){
@@ -34,7 +34,7 @@ class TimexClass extends React.Component {
 }
 
 
-export default function TimexFunction() {
+function TimexFunction() {
   const [time, setTime] = useState(0);
 
   useEffect(() => {
@@ -60,5 +60,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
